@@ -88,6 +88,29 @@ header .tel:hover { background: rgba(255, 255, 255, 0.12); border-color: rgba(25
 }
 .hero .btn { font-size: 1.03rem; }
 
+/* 히어로 페이드인 (등장 연출) */
+@keyframes hero-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.hero h1,
+.hero p,
+.hero .btn {
+  animation: hero-fade-in 0.7s ease both;
+}
+.hero h1 { animation-delay: 0s; }
+.hero p { animation-delay: 0.18s; }
+.hero .btn { animation-delay: 0.36s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .hero h1,
+  .hero p,
+  .hero .btn {
+    animation: none;
+    opacity: 1;
+  }
+}
+
 /* 버튼 */
 .btn {
   display: inline-block;
