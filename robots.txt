@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jaeheon0388-dot.github.io/bluelab-blog/sitemap.xml
+Sitemap: https://jaeheon0388-dot.github.io/sitemap.xml
