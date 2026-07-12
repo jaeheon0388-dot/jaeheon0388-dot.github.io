@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- 배포 후 example.com 을 실제 주소로 전체 치환할 것 -->
+<!-- 새 글 발행 시 <url> 항목 추가 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://example.com/</loc>
+    <loc>https://jaeheon0388-dot.github.io/bluelab-blog/</loc>
     <lastmod>2026-07-12</lastmod>
   </url>
   <url>
-    <loc>https://example.com/posts/2026-07-12-miyongsil-sugeon-setak-biyong.html</loc>
+    <loc>https://jaeheon0388-dot.github.io/bluelab-blog/posts/2026-07-12-miyongsil-sugeon-setak-biyong.html</loc>
     <lastmod>2026-07-12</lastmod>
   </url>
 </urlset>
