@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+  새 글 작성 규칙 (Claude용):
+  1. 이 템플릿을 복사해 posts/YYYY-MM-DD-영문슬러그.html 로 저장
+  2. {{제목}} {{메타설명}} {{날짜}} {{본문}} 치환 — 본문은 h2 3~5개, 1500자 이상, 표 또는 목록 포함
+  3. FAQ 2~3개 (details/summary), 마지막에 cta-box 유지
+  4. index.html 의 POST-LIST:START 바로 아래에 새 글 항목 추가
+  5. sitemap.xml 에 <url> 추가
+  6. 발행기록.md 에 한 줄 기록
+-->
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{제목}} | [업체명]</title>
+  <meta name="description" content="{{메타설명 — 80자 내외, 핵심 키워드 포함}}">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <a class="logo" href="../index.html">[업체명]</a>
+    <a class="tel" href="tel:[전화번호]">📞 [전화번호]</a>
+  </div>
+</header>
+
+<article>
+  <div class="container">
+    <h1>{{제목}}</h1>
+    <p class="meta">{{YYYY-MM-DD}} · [업체명] 세탁 가이드</p>
+
+    {{본문 — 첫 문단에 핵심 키워드, h2 3~5개, 표/목록 활용}}
+
+    <h2>자주 묻는 질문</h2>
+    <div class="faq">
+      <details><summary>{{질문1}}</summary><p>{{답변1}}</p></details>
+      <details><summary>{{질문2}}</summary><p>{{답변2}}</p></details>
+    </div>
+
+    <div class="cta-box">
+      <h3>{{CTA 제목 — 글 주제에 맞게}}</h3>
+      <p>매장 위치 + 하루 수건 사용량, 두 가지만 알려주세요. 견적은 무료입니다.</p>
+      <a class="btn" href="tel:[전화번호]">전화 상담</a>
+      <a class="btn sub" href="[카카오채널링크]">카카오톡 문의</a>
+    </div>
+  </div>
+</article>
+
+<footer>
+  <div class="container">
+    [업체명] · [지역] 업소용 수건 위탁세탁 · 렌탈<br>
+    문의 <a href="tel:[전화번호]">[전화번호]</a> · 배송권역: [지역/배송권역]
+  </div>
+</footer>
+
+</body>
+</html>
