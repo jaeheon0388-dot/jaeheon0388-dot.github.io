@@ -13,7 +13,7 @@
   <meta property="og:url" content="https://jaeheon0388-dot.github.io/">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%232469b0'/><path d='M20 58 q10 -14 25 -8 q15 6 25 -2 q6 -5 10 -10 q-2 16 -14 24 q-14 9 -30 4 q-10 -3 -16 -8z' fill='white'/></svg>">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=3">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -36,18 +36,51 @@
 </header>
 
 <div class="hero">
-  <h1>수건 걱정 없는 매장,<br>서울·경기남부 사장님들의 세탁공장</h1>
-  <p>미용실 · 헬스장 · 사우나 · 마사지샵 수건, 수거부터 새벽배송까지 통째로 맡기세요</p>
-  <a class="btn" href="tel:010-5673-3465">무료 견적 상담</a>
-  <div class="hero-badges">
-    <span>서울 전역 · 경기남부</span>
-    <span>주 3~7일 수거</span>
-    <span>영업 전 새벽배송</span>
-    <span>전 수량 검수·폴딩</span>
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <h1>수건 걱정 없는 매장,<br>서울·경기남부 사장님들의 세탁공장</h1>
+      <p>미용실 · 헬스장 · 사우나 · 마사지샵 수건, 수거부터 새벽배송까지 통째로 맡기세요</p>
+      <div class="hero-cta">
+        <a class="btn" href="tel:010-5673-3465">무료 견적 상담</a>
+        <a class="btn sub" href="https://pf.kakao.com/_xlMptn">카카오톡 문의</a>
+      </div>
+      <div class="hero-badges">
+        <span>서울 전역 · 경기남부</span>
+        <span>주 3~7일 수거</span>
+        <span>영업 전 새벽배송</span>
+        <span>전 수량 검수·폴딩</span>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 320 300" xmlns="http://www.w3.org/2000/svg">
+        <!-- 세탁기 본체 -->
+        <rect x="46" y="26" width="228" height="248" rx="26" fill="#ffffff" stroke="#e3e8ef" stroke-width="2"/>
+        <!-- 조작부 -->
+        <circle cx="82" cy="58" r="9" fill="#eef4fb" stroke="#2469b0" stroke-width="2.5"/>
+        <rect x="200" y="50" width="52" height="16" rx="8" fill="#eef4fb"/>
+        <!-- 드럼 문 -->
+        <circle cx="160" cy="172" r="82" fill="#eef4fb" stroke="#c9d9ec" stroke-width="3"/>
+        <circle cx="160" cy="172" r="64" fill="#dcebf9"/>
+        <!-- 드럼 속 파도 (로고 모티프) -->
+        <clipPath id="drum"><circle cx="160" cy="172" r="64"/></clipPath>
+        <g clip-path="url(#drum)">
+          <path class="drum-wave" d="M76 180 q21 -18 42 0 t42 0 t42 0 t42 0 t42 0 v70 h-252 z" fill="#2469b0"/>
+          <path class="drum-wave" d="M62 194 q21 -14 42 0 t42 0 t42 0 t42 0 t42 0 v56 h-252 z" fill="#16324f" opacity="0.85"/>
+          <circle cx="136" cy="196" r="5" fill="#ffffff" opacity="0.75"/>
+          <circle cx="176" cy="210" r="3.5" fill="#ffffff" opacity="0.6"/>
+        </g>
+        <circle cx="160" cy="172" r="64" fill="none" stroke="#ffffff" stroke-width="4"/>
+        <!-- 떠다니는 거품 -->
+        <circle class="bubble" cx="290" cy="90" r="14" fill="#dcebf9"/>
+        <circle class="bubble b2" cx="34" cy="130" r="9" fill="#dcebf9"/>
+        <circle class="bubble b3" cx="300" cy="205" r="7" fill="#c9d9ec"/>
+        <circle class="bubble b2" cx="26" cy="228" r="12" fill="#eef4fb" stroke="#c9d9ec" stroke-width="2"/>
+      </svg>
+    </div>
   </div>
 </div>
 
-<section>
+<section class="reveal">
   <div class="container">
     <h2>이런 매장의 세탁을 맡고 있습니다</h2>
     <div class="cards">
@@ -59,7 +92,7 @@
   </div>
 </section>
 
-<section class="process">
+<section class="process reveal">
   <div class="container">
     <h2>세탁 프로세스</h2>
     <div class="process-grid">
@@ -108,7 +141,7 @@
   </div>
 </section>
 
-<section>
+<section class="reveal">
   <div class="container">
     <h2>사장님을 위한 세탁 가이드</h2>
     <ul class="post-list">
@@ -126,7 +159,7 @@
   </div>
 </section>
 
-<section>
+<section class="reveal">
   <div class="container">
     <div class="cta-box">
       <h3>우리 매장도 맡길 수 있는지 궁금하세요?</h3>
@@ -143,6 +176,16 @@
     문의 <a href="tel:010-5673-3465">010-5673-3465</a> · 배송권역: 서울 전역 · 경기남부
   </div>
 </footer>
+
+<script>
+  document.documentElement.classList.add('js');
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+</script>
 
 </body>
 </html>
