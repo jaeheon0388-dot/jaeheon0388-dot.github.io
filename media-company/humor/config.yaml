@@ -1,0 +1,21 @@
+# 유머 카드뉴스 파이프라인 설정
+# sources: 소재를 수집할 RSS/Atom 피드 URL 목록.
+#   ⚠️ 아래는 동작 확인용 기본값입니다. 원하는 유머 커뮤니티/블로그 RSS로 교체하세요.
+sources:
+  - "https://news.google.com/rss/search?q=%EC%9C%A0%EB%A8%B8&hl=ko&gl=KR&ceid=KR:ko"
+
+# 문구 톤
+tone: "가볍고 위트있는 반말 톤. 아재개그 금지, 요즘 밈 감성."
+
+# 카드 하단 고정 문구 (계정 브랜딩)
+footer_text: "@your_humor_account"
+
+# 카드 배경 템플릿 파일명 (templates/ 안). 없으면 기본 단색 배경 사용.
+template: "card_bg.png"
+
+# 캡션에 붙일 해시태그
+hashtags:
+  - "#유머"
+  - "#웃긴짤"
+  - "#일상유머"
+  - "#피식"

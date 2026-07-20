@@ -1,0 +1,24 @@
+# 뷰티 파이프라인 설정
+# sources: 뷰티 트렌드/팁 소재 RSS/Atom 피드 URL 목록.
+#   ⚠️ 아래는 동작 확인용 기본값입니다. 원하는 뷰티 매체/블로그 RSS로 교체하세요.
+sources:
+  - "https://news.google.com/rss/search?q=%EB%B7%B0%ED%8B%B0%20%ED%8A%B8%EB%A0%8C%EB%93%9C&hl=ko&gl=KR&ceid=KR:ko"
+
+# 산출물 형태: single(단일 이미지) 또는 carousel(캐러셀)
+format: "carousel"
+
+# 문구 톤
+tone: "친근하고 신뢰감 있는 존댓말. 과장된 효능 표현 금지."
+
+# 카드 하단 고정 문구 (계정 브랜딩)
+footer_text: "@your_beauty_account"
+
+# 카드 배경 템플릿 파일명 (beauty/templates/ 안에 두면 사용, 없으면 기본 배경)
+template: "card_bg.png"
+
+# 캡션에 붙일 해시태그
+hashtags:
+  - "#뷰티"
+  - "#뷰티팁"
+  - "#스킨케어"
+  - "#메이크업"

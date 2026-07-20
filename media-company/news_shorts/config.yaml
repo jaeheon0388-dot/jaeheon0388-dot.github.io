@@ -1,0 +1,29 @@
+# 뉴스 숏폼 파이프라인 설정
+# sources: 뉴스 RSS 목록. ⚠️ 원하는 분야/매체 RSS로 교체하세요.
+sources:
+  - "https://news.google.com/rss/headlines/section/topic/BUSINESS?hl=ko&gl=KR&ceid=KR:ko"
+
+# 뉴스 분야 (선별 프롬프트에 반영: 경제/IT/연예 등)
+news_topic: "경제"
+
+# 대본 톤
+tone: "빠르고 명확한 존댓말. 어려운 용어는 한 줄로 풀어서 설명."
+
+# edge-tts 음성 (목록: edge-tts --list-voices | grep ko-KR)
+tts_voice: "ko-KR-SunHiNeural"
+
+# 영상 하단 채널명 워터마크
+channel_name: "@your_news_channel"
+
+# 자막 폰트 이름 (fc-list 에 나오는 패밀리명)
+subtitle_font_name: "NanumGothic"
+
+# 업로드 공개 설정: private | unlisted | public
+# (API 앱 심사 전에는 어떤 값이든 비공개로 강제됨 → 수동 공개 필요)
+privacy: "private"
+
+# 유튜브 태그
+yt_tags:
+  - "뉴스"
+  - "경제"
+  - "쇼츠"
